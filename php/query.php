@@ -7,7 +7,11 @@
  *
  * 此文件用于获取数据库连接以及销毁数据库连接和查询结果。
  * 在require此文件之前，请务必确认执行了require "php/config.php"。
- * 
+ *
+ * @name query.php
+ * @path php/query.php
+ * @require php/config.php
+ *
  */
 ?>
 <!DOCTYPE html>

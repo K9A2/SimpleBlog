@@ -7,6 +7,10 @@
  *
  * 网站首页文件
  *
+ * @name index.php
+ * @path ./index.php
+ * @require php/config.php, php/query.php, head.php, footer.php, banner.php
+ *
  */
     //前置引用
     require "php/config.php";
@@ -17,29 +21,18 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <?php require "header.php"; ?>
+        <?php require "head.php"; ?>
     </head>
     <body>
         <!--网站banner部分-->
         <?php require "banner.php"; ?>
         <!--网站正文部分-->
         <div class="container">
+            <!--获取数据库连接-->
+            <?php $conn = getConnection(); ?>
             <!--category为网站的文章分类-->
             <div class="category">
-                <?php
-
-                $conn = mysqli_connect(ADDRESS, USER, PASSWORD, DB_NAME);
-
-                //解决MYSQL乱码问题
-                mysqli_set_charset($conn, "utf8");
-
-                $result = mysqli_query($conn, "SELECT * FROM CATEGORY");
-
-                while ($row = mysqli_fetch_row($result)) {
-                    echo '<a class="category" href="#">'.$row[1].'</a>';
-                }
-
-                ?>
+                <?php require "category.php"; ?>
             </div>
             <!--atricle_list是网站的文章标题列表，用于首页-->
             <div class="article_list">
@@ -55,11 +48,9 @@
                     echo '<span class="release_time">'.$row[4].'</span>';
                     echo '</ul>';
                 }
-
-                mysqli_free_result($result);
-                mysqli_close($conn);
-
                 ?>
+                //释放数据库连接以及查询结果
+                <?php freeConnection($result, $conn); ?>
                 <ul class="category_title_and_date">
                     <a href="/stormlin/content.php?post_id=1" target="_blank">测试连接</a>
                     <span class="release_time">2016.1.1</span>

@@ -31,14 +31,14 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <?php require "header.php"; ?>
+        <?php require "head.php"; ?>
     </head>
     <body>
         <!--网站banner部分-->
         <?php require "banner.php"; ?>
         <!--网站正文部分-->
         <div class="container">
-            <?php  ?>
+            <?php require "category.php"; ?>
         </div>
         <!--网站页脚部分-->
         <?php require "footer.php"; ?>
