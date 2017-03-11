@@ -49,7 +49,7 @@
                     echo '</ul>';
                 }
                 ?>
-                //释放数据库连接以及查询结果
+                <!--释放数据库连接以及查询结果-->
                 <?php freeConnection($result, $conn); ?>
                 <ul class="category_title_and_date">
                     <a href="/stormlin/content.php?post_id=1" target="_blank">测试连接</a>
