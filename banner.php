@@ -6,6 +6,7 @@
  * Time: 23:54
  */
 
+
 echo '<div class="banner">';
 echo '<a href="#"><img class="icon" src="img/index.jpg"/></a>';
 echo '<p>Storm it!</p>';
