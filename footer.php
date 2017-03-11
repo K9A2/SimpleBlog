@@ -4,11 +4,10 @@
  * User: stormlin
  * Date: 2017/3/10
  * Time: 23:26
- */
-
-/**
+ *
  * 网站页脚文件，在任意网页结尾处使用require "footer.php"
- * 即可调用默认页脚样式
+ * 即可调用默认页脚样式。无任何前置条件。
+ *
  */
 
 echo '<div class="footer">';

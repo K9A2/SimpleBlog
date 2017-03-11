@@ -11,4 +11,10 @@
  * 即可调用默认分类页面样式
  */
 
+    $result = mysqli_query($conn, "SELECT * FROM CATEGORY");
+
+    while ($row = mysqli_fetch_row($result)) {
+        echo '<a class="category" href="#">'.$row[1].'</a>';
+    }
+
 ?>
