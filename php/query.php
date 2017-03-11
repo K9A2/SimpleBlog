@@ -13,14 +13,6 @@
  * @require php/config.php
  *
  */
-?>
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-</head>
-<body>
-<?php
 
 /**
  * 根据php/config.php中的数据库连接信息获取数据库连接
@@ -50,7 +42,3 @@ function freeConnection($result, $conn){
     mysqli_close($conn);
 
 }
-
-?>
-</body>
-</html>
