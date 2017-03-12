@@ -16,14 +16,13 @@
 
     //导入数据库连接文件
     require "php/config.php";
+    require "php/query.php";
 
     //获取post_id
     $ID = $_GET["post_id"];
 
     //打开数据库连接并获取数据
-    $conn = mysqli_connect(ADDRESS, USER, PASSWORD, DB_NAME);
-    mysqli_set_charset($conn, "utf8");
-    $result = mysqli_query($conn, "SELECT * FROM POST WHERE POST_ID = ".$ID);
+    $conn = getConnection();
 
 ?>
 
@@ -38,7 +37,23 @@
         <?php require "banner.php"; ?>
         <!--网站正文部分-->
         <div class="container">
-            <?php require "category.php"; ?>
+            <div class="category">
+                <?php require "category.php"; ?>
+            </div>
+            <!--文章标题-->
+            <div class="post_title">
+                <?php
+                    $result = mysqli_query($conn, "SELECT * FROM POST WHERE POST_ID = ".$ID);
+                    $row = mysqli_fetch_row($result);
+                    echo $row[2];
+                ?>
+            </div>
+            <!--文章正文-->
+            <div class="post_text">
+                <?php
+                    echo $row[3];
+                ?>
+            </div>
         </div>
         <!--网站页脚部分-->
         <?php require "footer.php"; ?>

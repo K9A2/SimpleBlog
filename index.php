@@ -41,7 +41,7 @@
                 <?php freeConnection($result, $conn); ?>
                 <!--以下为GET请求测试连接-->
                 <ul class="category_title_and_date">
-                    <a href="/stormlin/content.php?post_id=1" target="_blank">测试连接</a>
+                    <a href="/stormlin/post.php?post_id=1" target="_blank">测试连接</a>
                     <span class="release_time">2016.1.1</span>
                 </ul>
             </div>
