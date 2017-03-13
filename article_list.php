@@ -19,7 +19,7 @@
     //当用''来表示一个字符串时，不需要使用/来对"进行转义
     while ($row = mysqli_fetch_row($result)) {
         echo '<ul class="category_title_and_date">';
-        echo '<a href="#">'.$row[2].'</a>';
+        echo '<a href="/stormlin/post.php?post_id='.$row[0].'">'.$row[2].'</a>';
         echo '<span class="release_time">'.$row[4].'</span>';
         echo '</ul>';
     }

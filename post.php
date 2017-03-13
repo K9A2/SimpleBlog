@@ -32,7 +32,7 @@
     <head>
         <?php require "head.php"; ?>
         <!--代码高亮所用js，并不能存储到本地-->
-        <script type="text/javascript" src="js/highlight.js?lang=css&amp;skin=sunburst"></script>
+        <script src="/stormlin/js/run_prettify.js?lang=css&amp;skin=sunburst"></script>
     </head>
     <body>
         <!--网站banner部分-->
