@@ -32,7 +32,8 @@
     <head>
         <?php require "head.php"; ?>
         <!--代码高亮所用js，并不能存储到本地-->
-        <script src="/stormlin/js/run_prettify.js?lang=css&amp;skin=sunburst"></script>
+        <script src="js/run_prettify.js?lang=css&amp;skin=sunburst"></script>
+        <link href="css/prettify.css" type="text/css" rel="stylesheet">
     </head>
     <body>
         <!--网站banner部分-->
@@ -40,7 +41,7 @@
         <!--网站正文部分-->
         <div class="container">
             <div class="category">
-                <?php require "category.php"; ?>
+                <?php require "category_list.php"; ?>
             </div>
             <!--文章标题-->
             <div class="post_title">
