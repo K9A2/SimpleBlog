@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b4181de6-b65c-4198-9901-9068a71c06fe" name="Default" comment="js本地化完美实现，包括js文件和css文件的本地化，以及逐行行号不显示和背景混淆等问题的修复">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/category_list.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/article_list.php" afterPath="$PROJECT_DIR$/article_list.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/category.php" afterPath="$PROJECT_DIR$/category.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/post.php" afterPath="$PROJECT_DIR$/post.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/category.php" afterPath="$PROJECT_DIR$/category_list.php" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -351,12 +352,12 @@
       <workItem from="1489327078033" duration="3051000" />
       <workItem from="1489368689824" duration="503000" />
       <workItem from="1489369234086" duration="3993000" />
-      <workItem from="1489384625627" duration="6567000" />
+      <workItem from="1489384625627" duration="6594000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47314000" />
+    <option name="totallyTimeSpent" value="47341000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
