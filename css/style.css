@@ -19,8 +19,6 @@ img.icon{
 
 a{
     color: #428bca;
-
-
     text-decoration: none;
 }
 
@@ -28,16 +26,18 @@ div.category a{
     font-size: 20px;
     margin: auto 10px auto 10px;
     vertical-align: middle;
+    text-decoration: none;
 }
 
 div.article_list a{
     font-size: 20px;
     margin: auto;
+    text-decoration: none;
 }
 
 a:hover{
     color: #B31800;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 div.container{
@@ -88,6 +88,7 @@ div.footer p{
 
 div.footer a{
     font-size: 15px;
+    text-decoration: none;
 }
 
 div.post_text{
